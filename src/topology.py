@@ -141,10 +141,10 @@ def simpleTest():
     print("Testing network connectivity")
     net.pingAll()
     # Stop a network
-    CLI(net)
+    #CLI(net)
     dumpNodeConnections(net.hosts)
     dumpNodeConnections(net.switches)
-    #CLI(net)
+    CLI(net)
 
 '''
 Main (entry point)

@@ -20,6 +20,15 @@ In this lab, we are going to write a Python program which can generate a network
 > * Describe how to execute your program
 > * Show the screenshot of using iPerf command in Mininet
 
+### topology.py
+
+1. Simply run the python file using the command: ./typology.py
+![picture](runprogram.JPG)
+![picture](runprogram2.JPG)
+
+2. To check if the topology is correct, use the iPerf command to measure the network and produce the measurement results. Compare the results with the expected results given.
+![picture](iperfcommand.JPG)
+
 ---
 ## Description
 
@@ -28,10 +37,14 @@ In this lab, we are going to write a Python program which can generate a network
 > TODO:
 > * Describe the meaning of Mininet API in Python you used in detail
 
+1. Mininet is a network emulator. It creates a realistic virtual network, running real kernel, switch and application code, om a single machine (VM, cloud or native). It tuns a collection of end-hosts, switches, routers, and links on a single LInux kernel. 
+
 ### iPerf Commands
 
 > TODO:
 > * Describe the meaning of iPerf command you used in detail
+
+1. iPerf is a tool for active measurements of the maximum acheiveable bandwidth on IP networks. It supports tuning of various parameters related to timing, buffers and protocols (TCP, UDP, SCTP with IPv4 and IPV6)
 
 ### Tasks
 
@@ -39,7 +52,17 @@ In this lab, we are going to write a Python program which can generate a network
 > * Describe how you finish this work step-by-step in detail
 
 1. **Environment Setup**
-
+Step 1:
+I clicked the link provided to obtain the files required for the lab.
+Step 2:
+I used Putty(instead of Pietty) to login to my linux container through ssh. 
+Step 3:
+I proceeded to clone my github files using the following command in Putty:
+> $ git clone https://github.com/nctucn/lab2-<GITHUB_ID>.git Network_Topology 
+Step 4:
+After logging in to my container, I ran Mininet for testing.
+> $ sudo service openvswitch-sitch start
+> $ sudo mn
 
 2. **Example of Mininet**
 

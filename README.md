@@ -81,7 +81,7 @@ Based on the example.py, I created a modified topology that matched the one depi
 ![picture](topo1.png)
 * Step 2: <br />
 Remove the 'for-loops' used in example.py. Unlike the example topology, which only contains one central switch and two other hosts surrounding it, my topology is done is a straightforward manner where each switch or host is define specifically and then later linked together individually. This does away the need for 'for-loops'.<br />
-![picture](build.JPG)
+
 * Step 3: <br />
 Other requirements are to dump every hosts' connections in the program, and to enter the Mininet's CLI mode in the program.<br />
 ![picture](requirements.JPG)

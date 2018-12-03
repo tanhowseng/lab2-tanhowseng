@@ -69,7 +69,7 @@ After logging in to my container, I ran Mininet for testing.<br />
 * Step 1: <br />
 In the example, the topology depicted includes one switch and two hosts. From this I could infer that the "SingleSwitchTopo" class object written in the example.py code refers to the build of the topology, with "switch" and "host" as their attributes. The "addLink" function creates the link attributes with paramters such as bandwidth, loss and delay.
 * Step 2:<br />
-In the main init function, we can tell that the function "simpletest" is called. If we look closely at "simpletest" function, we can also tell that the class object "SingleSwitchTopo" is also called. From this I could infer that I should modify the function and the class object to create my own topology.
+In the main init function, we can tell that the function "simpletest" is called. If we look closely at "simpletest" function, we could also tell that the class object "SingleSwitchTopo" is also called. From this I could infer that I should modify the function and the class object to create my own topology.
 * Step 3:<br />
 If there is no "net.stop" function called after building the virtual network topology, then the virtual network topology remains in mininet. Run the command "sudo mn -c" to reset the mininet virtual network.
 > sudo mn -c
@@ -87,13 +87,19 @@ Other requirements are to dump every hosts' connections in the program, and to e
 ![picture](requirements.JPG)
 
 4. **Measurement**
-
+* Step 1: <br />
+Run the following iperf commands to receive the results of the network measurements. Compare the results with the given expected result.<br />
+![picture](iperfmeasurement.JPG)
 
 ---
 ## References
 
 > TODO: 
 > * Please add your references in the following
+> Mostly the example.py and the lab2_tasks PDF file. Other than that, I also used some of these websites: 
+1.	Python Classes and Objects: https://www.w3schools.com/python/python_classes.asp
+2.	Vim tips and tricks: https://www.cs.swarthmore.edu/oldhelp/vim/selection.html
+
 
 * **Mininet**
     * [Mininet Walkthrough](http://mininet.org/walkthrough/)

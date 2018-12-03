@@ -84,15 +84,7 @@ Remove the 'for-loops' used in example.py. Unlike the example topology, which on
 ![picture](build.JPG)
 * Step 3: <br />
 Other requirements are to dump every hosts' connections in the program, and to enter the Mininet's CLI mode in the program.
-> # Remember to import the following module first!
-from mininet.util import dumpNodeConnections
-# Dump every hosts’ and switches’ connections
-dumpNodeConnections(net.hosts)
-dumpNodeConnections(net.switches)
-> # Remember to import the following module first!
-from mininet.cli import CLI
-# Add the following code and do NOT use net.stop()
-CLI(net)
+![picture](requirements.JPG)
 
 4. **Measurement**
 

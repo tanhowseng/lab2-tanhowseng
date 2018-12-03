@@ -59,10 +59,11 @@ I used Putty(instead of Pietty) to login to my linux container through ssh. <br 
 Step 3:<br />
 I proceeded to clone my github files using the following command in Putty:<br />
 > $ git clone https://github.com/nctucn/lab2-<GITHUB_ID>.git Network_Topology <br />
+
 Step 4:<br />
 After logging in to my container, I ran Mininet for testing.<br />
 > $ sudo service openvswitch-sitch start
-> $ sudo mn
+ $ sudo mn
 
 2. **Example of Mininet**
 

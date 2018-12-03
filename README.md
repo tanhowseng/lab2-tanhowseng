@@ -70,10 +70,29 @@ After logging in to my container, I ran Mininet for testing.<br />
 In the example, the topology depicted includes one switch and two hosts. From this I could infer that the "SingleSwitchTopo" class object written in the example.py code refers to the build of the topology, with "switch" and "host" as their attributes. The "addLink" function creates the link attributes with paramters such as bandwidth, loss and delay.
 * Step 2:<br />
 In the main init function, we can tell that the function "simpletest" is called. If we look closely at "simpletest" function, we can also tell that the class object "SingleSwitchTopo" is also called. From this I could infer that I should modify the function and the class object to create my own topology.
+* Step 3:<br />
+If there is no "net.stop" function called after building the virtual network topology, then the virtual network topology remains in mininet. Run the command "sudo mn -c" to reset the mininet virtual network.
+> sudo mn -c
 
 
 3. **Topology Generator**
-
+* Step 1: <br />
+Based on the example.py, I created a modified topology that matched the one depicted in the picture "topo1.png". 
+![picture](topo1.png)
+* Step 2: <br />
+Remove the 'for-loops' used in example.py. Unlike the example topology, which only contains one central switch and two other hosts surrounding it, my topology is done is a straightforward manner where each switch or host is define specifically and then later linked together individually. This does away the need for 'for-loops'.
+![picture](build.JPG)
+* Step 3: <br />
+Other requirements are to dump every hosts' connections in the program, and to enter the Mininet's CLI mode in the program.
+> # Remember to import the following module first!
+from mininet.util import dumpNodeConnections
+# Dump every hosts’ and switches’ connections
+dumpNodeConnections(net.hosts)
+dumpNodeConnections(net.switches)
+> # Remember to import the following module first!
+from mininet.cli import CLI
+# Add the following code and do NOT use net.stop()
+CLI(net)
 
 4. **Measurement**
 

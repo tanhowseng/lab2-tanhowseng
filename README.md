@@ -37,14 +37,14 @@ In this lab, we are going to write a Python program which can generate a network
 > TODO:
 > * Describe the meaning of Mininet API in Python you used in detail
 
-1. Mininet is a network emulator. It creates a realistic virtual network, running real kernel, switch and application code, on a single machine (VM, cloud or native). It tuns a collection of end-hosts, switches, routers, and links on a single LInux kernel. 
+* Mininet is a network emulator. It creates a realistic virtual network, running real kernel, switch and application code, on a single machine (VM, cloud or native). It tuns a collection of end-hosts, switches, routers, and links on a single LInux kernel. 
 
 ### iPerf Commands
 
 > TODO:
 > * Describe the meaning of iPerf command you used in detail
 
-1. iPerf is a tool for active measurements of the maximum acheiveable bandwidth on IP networks. It supports tuning of various parameters related to timing, buffers and protocols (TCP, UDP, SCTP with IPv4 and IPV6)
+* iPerf is a tool for active measurements of the maximum acheiveable bandwidth on IP networks. It supports tuning of various parameters related to timing, buffers and protocols (TCP, UDP, SCTP with IPv4 and IPV6)
 
 ### Tasks
 

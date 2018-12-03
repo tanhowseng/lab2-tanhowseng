@@ -37,7 +37,7 @@ In this lab, we are going to write a Python program which can generate a network
 > TODO:
 > * Describe the meaning of Mininet API in Python you used in detail
 
-1. Mininet is a network emulator. It creates a realistic virtual network, running real kernel, switch and application code, om a single machine (VM, cloud or native). It tuns a collection of end-hosts, switches, routers, and links on a single LInux kernel. 
+1. Mininet is a network emulator. It creates a realistic virtual network, running real kernel, switch and application code, on a single machine (VM, cloud or native). It tuns a collection of end-hosts, switches, routers, and links on a single LInux kernel. 
 
 ### iPerf Commands
 
@@ -58,11 +58,11 @@ Step 2:<br />
 I used Putty(instead of Pietty) to login to my linux container through ssh. <br />
 Step 3:<br />
 I proceeded to clone my github files using the following command in Putty:<br />
->> $ git clone https://github.com/nctucn/lab2-<GITHUB_ID>.git Network_Topology <br />
+> $ git clone https://github.com/nctucn/lab2-<GITHUB_ID>.git Network_Topology <br />
 Step 4:<br />
 After logging in to my container, I ran Mininet for testing.<br />
->> $ sudo service openvswitch-sitch start
->> $ sudo mn
+> $ sudo service openvswitch-sitch start
+> $ sudo mn
 
 2. **Example of Mininet**
 

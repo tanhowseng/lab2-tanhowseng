@@ -52,15 +52,15 @@ In this lab, we are going to write a Python program which can generate a network
 > * Describe how you finish this work step-by-step in detail
 
 1. **Environment Setup**<br />
-*Step 1: <br />
+* Step 1: <br />
 I clicked the link provided to obtain the files required for the lab.<br />
-Step 2:<br />
+* Step 2:<br />
 I used Putty(instead of Pietty) to login to my linux container through ssh. <br />
-Step 3:<br />
+* Step 3:<br />
 I proceeded to clone my github files using the following command in Putty:<br />
 > $ git clone https://github.com/nctucn/lab2-<GITHUB_ID>.git Network_Topology <br />
 
-*Step 4:<br />
+* Step 4:<br />
 After logging in to my container, I ran Mininet for testing.<br />
 > $ sudo service openvswitch-sitch start
  $ sudo mn

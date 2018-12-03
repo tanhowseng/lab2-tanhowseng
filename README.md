@@ -96,7 +96,7 @@ Run the following iperf commands to receive the results of the network measureme
 
 > TODO: 
 > * Please add your references in the following
-> Mostly the example.py and the lab2_tasks PDF file. Other than that, I also used some of these websites: 
+* Mostly the example.py and the lab2_tasks PDF file. Other than that, I also used some of these websites: 
 1.	Python Classes and Objects: https://www.w3schools.com/python/python_classes.asp
 2.	Vim tips and tricks: https://www.cs.swarthmore.edu/oldhelp/vim/selection.html
 

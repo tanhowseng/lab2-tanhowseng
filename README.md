@@ -132,7 +132,7 @@ Mostly the example.py and the lab2_tasks PDF file. Other than that, I also used 
 > TODO:
 > * Please replace "YOUR_NAME" and "YOUR_GITHUB_LINK" into yours
 
-* [YOUR_NAME](YOUR_GITHUB_LINK)
+* Tan How Seng(https://github.com/nctucn/lab2-tanhowseng)
 * [David Lu](https://github.com/yungshenglu)
 
 ---

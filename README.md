@@ -71,7 +71,7 @@ After logging in to my container, I ran Mininet for testing.<br />
 
 2. **Example of Mininet**
 * Step 1: <br />
-In the example, the topology depicted includes one switch and two hosts. From this I could infer that the "SingleSwitchTopo" class object written in the example.py code refers to the build of the topology, with "switch" and "host" as their attributes. The "addLink" function creates the link attributes with paramters such as bandwidth, loss and delay.
+In the example, the topology depicted includes one switch and two hosts. From this I could infer that the "SingleSwitchTopo" class object written in the example.py code refers to the build of the topology, with "switch" and "host" as their attributes. The "addLink" function creates the link attributes with paramters such as bandwidth, loss and delay. <br />
 ![picture](Topoclass.JPG)
 * Step 2:<br />
 In the main init function, we can tell that the function "simpletest" is called. If we look closely at "simpletest" function, we could also tell that the class object "SingleSwitchTopo" is also called. From this I could infer that I should modify the function and the class object to create my own topology.

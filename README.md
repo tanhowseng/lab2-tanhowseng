@@ -37,14 +37,18 @@ In this lab, we are going to write a Python program which can generate a network
 > TODO:
 > * Describe the meaning of Mininet API in Python you used in detail
 
-* Mininet is a network emulator. It creates a realistic virtual network, running real kernel, switch and application code, on a single machine (VM, cloud or native). It tuns a collection of end-hosts, switches, routers, and links on a single LInux kernel. 
+* Mininet is a network emulator. It creates a realistic virtual network, running real kernel, switch and application code, on a single machine (VM, cloud or native). It runs a collection of end-hosts, switches, routers, and links on a single LInux kernel. 
+* A Mininet host behaves just like a real machine; you can ssh into it (if you start up sshd and bridge the network to your host) and run arbitrary programs (including anything that is installed on the underlying Linux system.)
+* The programs you run can send packets through what seems like a real Ethernet interface, with a given link speed and delay. Packets get processed by what looks like a real Ethernet switch, router, or middlebox, with a given amount of queueing.
+* When two programs, like an iperf client and server, communicate through Mininet, the measured performance should match that of two (slower) native machines.
 
 ### iPerf Commands
 
 > TODO:
 > * Describe the meaning of iPerf command you used in detail
 
-* iPerf is a tool for active measurements of the maximum acheiveable bandwidth on IP networks. It supports tuning of various parameters related to timing, buffers and protocols (TCP, UDP, SCTP with IPv4 and IPV6)
+* iPerf is a tool for active measurements of the maximum acheiveable bandwidth on IP networks. It supports tuning of various parameters related to timing, buffers and protocols (TCP, UDP, SCTP with IPv4 and IPV6).
+* For each test it reports the measured throughput / bitrate, loss, and other parameters.
 
 ### Tasks
 
@@ -68,6 +72,7 @@ After logging in to my container, I ran Mininet for testing.<br />
 2. **Example of Mininet**
 * Step 1: <br />
 In the example, the topology depicted includes one switch and two hosts. From this I could infer that the "SingleSwitchTopo" class object written in the example.py code refers to the build of the topology, with "switch" and "host" as their attributes. The "addLink" function creates the link attributes with paramters such as bandwidth, loss and delay.
+![picture](Topoclass.JPG)
 * Step 2:<br />
 In the main init function, we can tell that the function "simpletest" is called. If we look closely at "simpletest" function, we could also tell that the class object "SingleSwitchTopo" is also called. From this I could infer that I should modify the function and the class object to create my own topology.
 * Step 3:<br />
@@ -99,6 +104,7 @@ Run the following iperf commands to receive the results of the network measureme
 Mostly the example.py and the lab2_tasks PDF file. Other than that, I also used some of these websites: 
 1.	Python Classes and Objects: https://www.w3schools.com/python/python_classes.asp
 2.	Vim tips and tricks: https://www.cs.swarthmore.edu/oldhelp/vim/selection.html
+3. iPerf3: https://github.com/esnet/iperf
 
 
 * **Mininet**

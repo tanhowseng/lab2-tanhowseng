@@ -62,8 +62,8 @@ I proceeded to clone my github files using the following command in Putty:<br />
 
 * Step 4:<br />
 After logging in to my container, I ran Mininet for testing.<br />
-> ` $ sudo service openvswitch-sitch start `
- $ sudo mn
+> ` $ sudo service openvswitch-sitch start` <br />
+ `$ sudo mn`
 
 2. **Example of Mininet**
 * Step 1: <br />

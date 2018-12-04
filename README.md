@@ -72,7 +72,7 @@ In the example, the topology depicted includes one switch and two hosts. From th
 In the main init function, we can tell that the function "simpletest" is called. If we look closely at "simpletest" function, we could also tell that the class object "SingleSwitchTopo" is also called. From this I could infer that I should modify the function and the class object to create my own topology.
 * Step 3:<br />
 If there is no "net.stop" function called after building the virtual network topology, then the virtual network topology remains in mininet. Run the command "sudo mn -c" to reset the mininet virtual network.
-> `sudo mn -c`
+> `$ sudo mn -c`
 
 
 3. **Topology Generator**
